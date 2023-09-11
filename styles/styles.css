@@ -44,6 +44,17 @@ button {
   margin-bottom: 24px;
 }
 
+.slide {
+  flex-shrink: 0;
+  color: #7e7e82;
+  font-family: TT Lakes;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -0.2px;
+}
+
 /* Header-top */
 .b-top-menu {
   height: 88px;
@@ -51,7 +62,7 @@ button {
   align-items: center;
   justify-content: space-between;
   background-color: #fff;
-  border-bottom: 0.1rem solid #d9fff5;
+  border-bottom: 2px solid #d9fff5;
 }
 .b-top-menu__e-divider {
   width: 2px;
@@ -95,24 +106,17 @@ button {
   background: linear-gradient(270deg, #f8f8f8 16.84%, rgba(248, 248, 248, 0) 100%);
 }
 
+.b-slide-row > * {
+  padding: 8px;
+}
+
 .b-slide-row {
-  margin-left: 1rem;
+  margin-left: 16px;
   display: flex;
-  gap: 1.25rem;
+  gap: 20px;
   overflow-x: scroll;
 }
-.b-slide-row__e-slide {
-  padding: 0.5rem;
-  flex-shrink: 0;
-  color: #7e7e82;
-  font-family: TT Lakes;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 150%;
-  letter-spacing: -0.2px;
-}
-.b-slide-row__e-slide--active {
+.b-slide-row__devices--active {
   border-radius: 6px;
   border: 2px solid #b8ffec;
   background: #fff;
@@ -120,11 +124,11 @@ button {
 
 .b-about {
   display: flex;
-  margin-bottom: 2rem;
+  margin-bottom: 32px;
 }
 
 .b-about-content__e-text {
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
   color: #1b1c21;
   font-family: TT Lakes;
   font-size: 14px;
@@ -134,7 +138,7 @@ button {
   letter-spacing: 0.2px;
 }
 .b-about-content__e-more {
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
   display: flex;
   align-items: center;
   color: #1b1c21;
@@ -146,7 +150,7 @@ button {
   letter-spacing: -0.2px;
 }
 .b-about-content--box-model {
-  margin: 0 1rem;
+  margin: 0 16px;
 }
 
 .b-logo__e-photo-mob {
@@ -162,7 +166,7 @@ button {
   .b-top-menu__e-divider:nth-child(2) {
     display: none;
   }
-  .b-slide-row__e-slide:nth-child(n+3) {
+  .b-slide-row > .slide:nth-child(n+3) {
     display: none;
   }
   .b-about {
@@ -176,9 +180,6 @@ button {
   }
 }
 @media screen and (min-width: 767.9px) and (max-width: 1023.9px) {
-  html {
-    font-size: 20px;
-  }
   .common-mb {
     margin-bottom: 32px;
   }
@@ -189,7 +190,7 @@ button {
     margin-right: auto;
   }
   .b-top-menu__e-nav-icon, .b-top-menu__e-divider {
-    margin-right: 1rem;
+    margin-right: 16px;
   }
   .b-top-menu__e-nav-icon:last-child {
     margin-right: 0;

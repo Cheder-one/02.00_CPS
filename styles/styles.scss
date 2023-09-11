@@ -41,6 +41,17 @@ button {
   margin-bottom: 24px;
 }
 
+.slide {
+  flex-shrink: 0;
+  color: #7e7e82;
+  font-family: TT Lakes;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -0.2px;
+}
+
 /* Header-top */
 .b-top-menu {
   height: 88px;
@@ -48,7 +59,7 @@ button {
   align-items: center;
   justify-content: space-between;
   background-color: #fff;
-  border-bottom: 0.1rem solid #d9fff5;
+  border-bottom: 2px solid #d9fff5;
 
   &__e-divider {
     width: 2px;
@@ -101,25 +112,16 @@ button {
   }
 }
 
+.b-slide-row > * {
+  padding: 8px;
+}
 .b-slide-row {
-  margin-left: 1rem;
+  margin-left: 16px;
   display: flex;
-  gap: 1.25rem;
+  gap: 20px;
   overflow-x: scroll;
 
-  &__e-slide {
-    padding: 0.5rem;
-    flex-shrink: 0;
-
-    //
-    color: #7e7e82;
-    font-family: TT Lakes;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 150%;
-    letter-spacing: -0.2px;
-
+  &__devices {
     &--active {
       border-radius: 6px;
       border: 2px solid #b8ffec;
@@ -130,12 +132,12 @@ button {
 
 .b-about {
   display: flex;
-  margin-bottom: 2rem;
+  margin-bottom: 32px;
 }
 
 .b-about-content {
   &__e-text {
-    margin-bottom: 1rem;
+    margin-bottom: 16px;
     color: #1b1c21;
     font-family: TT Lakes;
     font-size: 14px;
@@ -146,7 +148,7 @@ button {
   }
 
   &__e-more {
-    margin-bottom: 1rem;
+    margin-bottom: 16px;
     display: flex;
     align-items: center;
     color: #1b1c21;
@@ -159,7 +161,7 @@ button {
   }
 
   &--box-model {
-    margin: 0 1rem;
+    margin: 0 16px;
   }
 }
 .b-logo {
@@ -184,10 +186,8 @@ button {
   }
 
   // Скрытие слайдов после 2-го
-  .b-slide-row {
-    &__e-slide:nth-child(n + 3) {
-      display: none;
-    }
+  .b-slide-row > .slide:nth-child(n + 3) {
+    display: none;
   }
 
   .b-about {
@@ -208,9 +208,6 @@ button {
 
 // Tablet
 @media screen and (min-width: 767.9px) and (max-width: 1023.9px) {
-  html {
-    font-size: 20px;
-  }
   .common-mb {
     margin-bottom: 32px;
   }
@@ -226,7 +223,7 @@ button {
     // Отступы между каждым элементом
     &__e-nav-icon,
     &__e-divider {
-      margin-right: 1rem;
+      margin-right: 16px;
     }
     // Удаление отступа после последнего
     &__e-nav-icon:last-child {
