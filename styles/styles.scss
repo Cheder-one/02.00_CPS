@@ -1,25 +1,25 @@
-/* html {
-  box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
 }
 *,
 *:before,
 *:after {
   box-sizing: inherit;
-} */
-
-* {
-  margin: 0;
-  padding: 0;
 }
-
+html {
+  box-sizing: border-box;
+}
+body {
+  background: #f8f8f8;
+  font-family: TT Lakes;
+}
 button {
   all: initial;
   cursor: pointer;
 }
-
-body {
-  background: #f8f8f8;
-  font-family: TT Lakes;
+::-webkit-scrollbar {
+  height: 0px;
 }
 
 @font-face {
@@ -41,35 +41,30 @@ body {
   height: 5.5rem;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   background-color: #fff;
   border-bottom: 0.1rem solid #d9fff5;
 
+  &__e-divider {
+    width: 2px;
+    height: 32px;
+    flex-shrink: 0;
+    align-self: center;
+    border-radius: 1px;
+    background: #eaeaea;
+  }
+
   &--box-model {
     margin-bottom: 1.5rem;
+    padding: 0 1rem;
   }
 }
 
-.b-divider {
-  width: 2px;
-  height: 32px;
-  flex-shrink: 0;
-  align-self: center;
-  border-radius: 1px;
-  background: #eaeaea;
-}
-
 /* Main */
-// .b-main-content {
-//   display: flex;
-//   flex-direction: column;
-//   gap: 1.5rem;
-// }
-
 .b-header,
 .b-slide-menu,
 .b-about {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem; // TODO В Модификатор
 }
 
 .b-header {
@@ -88,11 +83,11 @@ body {
 }
 
 .b-slide-menu {
-  position: relative;
+  position: relative; // TODO В модификатор
 
   &__e-fade {
     width: 1.5rem;
-    height: 2.5rem;
+    height: 2.7rem;
     position: absolute;
     bottom: 0;
     left: auto;
@@ -111,7 +106,7 @@ body {
   margin-left: 1rem;
   display: flex;
   gap: 1.25rem;
-  overflow: hidden;
+  overflow-x: scroll;
 
   &__e-slide {
     padding: 0.5rem;
@@ -165,9 +160,54 @@ body {
 
 .b-logo {
   &__e-photo-mob {
-    margin-bottom: 2rem;
+    margin-bottom: 2rem; // TODO Желательно в Модификатор Блока
     width: 100%;
     height: auto;
     flex-shrink: 0;
+  }
+}
+
+// Mobile
+@media screen and (max-width: 767.9px) {
+  .b-top-menu {
+    // Скрыл 3-6 иконки
+    &__e-nav-icon:nth-child(n + 3):nth-child(-n + 6) {
+      display: none;
+    }
+    // Скрыл 1й divider
+    &__e-divider:nth-child(2) {
+      display: none;
+    }
+  }
+
+  .b-slide-row {
+    &__e-slide:nth-child(n + 3) {
+      display: none;
+    }
+  }
+}
+
+// Tablet
+@media screen and (min-width: 767.9px) and (max-width: 1023.9px) {
+  // .b-top-menu :nth-child(-n + 3) {
+  //   margin-right: auto;
+  // }
+  // .b-top-menu :nth-child(n + 4) {
+  //   margin-left: auto;
+  // }
+
+  .b-slide-row {
+    &__e-slide:nth-child(4) {
+      display: none;
+    }
+  }
+}
+
+// Laptop >=
+@media screen and (min-width: 1023.9px) {
+  .b-slide-menu {
+    &__e-fade {
+      display: none;
+    }
   }
 }
