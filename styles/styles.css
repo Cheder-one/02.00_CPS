@@ -164,6 +164,15 @@ button {
   }
 }
 @media screen and (min-width: 767.9px) and (max-width: 1023.9px) {
+  .b-top-menu__e-logo {
+    margin-right: auto;
+  }
+  .b-top-menu__e-nav-icon, .b-top-menu__e-divider {
+    margin-right: 1rem;
+  }
+  .b-top-menu__e-nav-icon:last-child {
+    margin-right: 0;
+  }
   .b-slide-row__e-slide:nth-child(4) {
     display: none;
   }
