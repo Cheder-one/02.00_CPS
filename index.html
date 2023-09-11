@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="src/app/components/b-top-menu/b-top-menu.css"
+    />
+    <title>SCP Макет</title>
+  </head>
+  <body>
+    <header>
+      <div class="b-top-menu b-top-menu--box-model">
+        <button class="b-nav-icon">
+          <img src="src/app/assets/img/ic/burger.svg" alt="sidebar" />
+        </button>
+
+        <a href="#" class="b-top-menu__e-logo">
+          <img src="src/app/assets/img/logo/cps-logo.svg" alt="logo" />
+        </a>
+
+        <div class="b-divider"></div>
+
+        <button class="b-nav-icon">
+          <img src="src/app/assets/img/ic/repair.svg" alt="sidebar" />
+        </button>
+
+        <button class="b-nav-icon">
+          <img src="src/app/assets/img/ic/checkstatus.svg" alt="sidebar" />
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <div class="b-header">
+        <img src="src/app/assets/img/highlight.svg" alt="" />
+        <h1 class="b-header__e-title">Услуги и сервисы</h1>
+      </div>
+
+      <div class="b-slide-menu b-slide-menu--box-model">
+        <div class="b-slide-row">
+          <button class="b-slide-row__e-slide b-slide-row__e-slide--active">
+            Ремонтируемые устройства
+          </button>
+          <button class="b-slide-row__e-slide">Дополнительные услуги</button>
+        </div>
+
+        <div class="b-slide-menu__e-fade"></div>
+      </div>
+
+      <div class="b-about b-about--box-model">
+        <div class="b-about__e-content b-about__e-content--box-model">
+          <div class="b-about__e-text">
+            Мы являемся авторизованным сервисным центром по ремонту техники
+            Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+            официальной гарантией производителя.
+          </div>
+          <div class="b-about__e-more">
+            <img src="src/app/assets/img/expand.svg" alt="" />
+            <span>Читать далее</span>
+          </div>
+        </div>
+
+        <div class="b-logo">
+          <img
+            class="b-logo__e-photo-mob"
+            src="src/app/assets/img/logo/cps-logo-photo.png"
+            alt="company logo photo"
+          />
+        </div>
+      </div>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
