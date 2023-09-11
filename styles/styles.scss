@@ -36,9 +36,14 @@ button {
   src: url("/src/app/assets/font/TTLakes/TTLakes-Bold.ttf") format("truetype");
 }
 
-/* Header */
+/* Mixes */
+.common-mb {
+  margin-bottom: 24px;
+}
+
+/* Header-top */
 .b-top-menu {
-  height: 5.5rem;
+  height: 88px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -55,21 +60,15 @@ button {
   }
 
   &--box-model {
-    margin-bottom: 1.5rem;
-    padding: 0 1rem;
+    padding: 0 16px;
+    margin-bottom: 24px;
   }
 }
 
 /* Main */
-.b-header,
-.b-slide-menu,
-.b-about {
-  margin-bottom: 1.5rem; // TODO В Модификатор
-}
-
 .b-header {
   display: flex;
-  gap: 0.75rem;
+  gap: 12px;
 
   &__e-title {
     color: #1b1c21;
@@ -86,8 +85,8 @@ button {
   position: relative; // TODO В модификатор
 
   &__e-fade {
-    width: 1.5rem;
-    height: 2.7rem;
+    width: 24px;
+    height: 40px;
     position: absolute;
     bottom: 0;
     left: auto;
@@ -129,10 +128,11 @@ button {
 }
 
 .b-about {
-  &__e-content {
-    margin: 0 1rem;
-  }
+  display: flex;
+  margin-bottom: 2rem;
+}
 
+.b-about-content {
   &__e-text {
     margin-bottom: 1rem;
     color: #1b1c21;
@@ -156,11 +156,13 @@ button {
     line-height: 150%;
     letter-spacing: -0.2px;
   }
-}
 
+  &--box-model {
+    margin: 0 1rem;
+  }
+}
 .b-logo {
   &__e-photo-mob {
-    margin-bottom: 2rem; // TODO Желательно в Модификатор Блока
     width: 100%;
     height: auto;
     flex-shrink: 0;
@@ -170,25 +172,51 @@ button {
 // Mobile
 @media screen and (max-width: 767.9px) {
   .b-top-menu {
-    // Скрыл 3-6 иконки
+    // Скрыты иконки 3-6
     &__e-nav-icon:nth-child(n + 3):nth-child(-n + 6) {
       display: none;
     }
-    // Скрыл 1й divider
+    // Скрыт 1й divider
     &__e-divider:nth-child(2) {
       display: none;
     }
   }
 
+  // Скрытие слайдов после 2-го
   .b-slide-row {
     &__e-slide:nth-child(n + 3) {
       display: none;
     }
   }
+
+  .b-about {
+    flex-direction: column;
+  }
+  // Скрытие лишнего текста о компании
+  .b-about-content {
+    &__e-part-2 {
+      display: none;
+    }
+  }
+
+  // Отключение разрыва текста
+  .b-divider-x--show {
+    display: none;
+  }
 }
 
 // Tablet
 @media screen and (min-width: 767.9px) and (max-width: 1023.9px) {
+  html {
+    font-size: 20px;
+  }
+  .common-mb {
+    margin-bottom: 32px;
+  }
+  .b-about {
+    margin-bottom: 40px;
+  }
+
   // Три элемента прижаты влево, остальные вправо
   .b-top-menu {
     &__e-logo {
@@ -205,8 +233,16 @@ button {
     }
   }
 
+  // Скрытие 4-го слайда
   .b-slide-row {
     &__e-slide:nth-child(4) {
+      display: none;
+    }
+  }
+
+  // Скрытие лишнего текста о компании
+  .b-about-content {
+    &__e-part-3 {
       display: none;
     }
   }

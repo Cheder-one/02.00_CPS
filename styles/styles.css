@@ -39,9 +39,14 @@ button {
   font-family: "TT Lakes Bold";
   src: url("/src/app/assets/font/TTLakes/TTLakes-Bold.ttf") format("truetype");
 }
-/* Header */
+/* Mixes */
+.common-mb {
+  margin-bottom: 24px;
+}
+
+/* Header-top */
 .b-top-menu {
-  height: 5.5rem;
+  height: 88px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -57,20 +62,14 @@ button {
   background: #eaeaea;
 }
 .b-top-menu--box-model {
-  margin-bottom: 1.5rem;
-  padding: 0 1rem;
+  padding: 0 16px;
+  margin-bottom: 24px;
 }
 
 /* Main */
-.b-header,
-.b-slide-menu,
-.b-about {
-  margin-bottom: 1.5rem;
-}
-
 .b-header {
   display: flex;
-  gap: 0.75rem;
+  gap: 12px;
 }
 .b-header__e-title {
   color: #1b1c21;
@@ -86,8 +85,8 @@ button {
   position: relative;
 }
 .b-slide-menu__e-fade {
-  width: 1.5rem;
-  height: 2.7rem;
+  width: 24px;
+  height: 40px;
   position: absolute;
   bottom: 0;
   left: auto;
@@ -119,10 +118,12 @@ button {
   background: #fff;
 }
 
-.b-about__e-content {
-  margin: 0 1rem;
+.b-about {
+  display: flex;
+  margin-bottom: 2rem;
 }
-.b-about__e-text {
+
+.b-about-content__e-text {
   margin-bottom: 1rem;
   color: #1b1c21;
   font-family: TT Lakes;
@@ -132,7 +133,7 @@ button {
   line-height: 128.571%;
   letter-spacing: 0.2px;
 }
-.b-about__e-more {
+.b-about-content__e-more {
   margin-bottom: 1rem;
   display: flex;
   align-items: center;
@@ -144,9 +145,11 @@ button {
   line-height: 150%;
   letter-spacing: -0.2px;
 }
+.b-about-content--box-model {
+  margin: 0 1rem;
+}
 
 .b-logo__e-photo-mob {
-  margin-bottom: 2rem;
   width: 100%;
   height: auto;
   flex-shrink: 0;
@@ -162,8 +165,26 @@ button {
   .b-slide-row__e-slide:nth-child(n+3) {
     display: none;
   }
+  .b-about {
+    flex-direction: column;
+  }
+  .b-about-content__e-part-2 {
+    display: none;
+  }
+  .b-divider-x--show {
+    display: none;
+  }
 }
 @media screen and (min-width: 767.9px) and (max-width: 1023.9px) {
+  html {
+    font-size: 20px;
+  }
+  .common-mb {
+    margin-bottom: 32px;
+  }
+  .b-about {
+    margin-bottom: 40px;
+  }
   .b-top-menu__e-logo {
     margin-right: auto;
   }
@@ -174,6 +195,9 @@ button {
     margin-right: 0;
   }
   .b-slide-row__e-slide:nth-child(4) {
+    display: none;
+  }
+  .b-about-content__e-part-3 {
     display: none;
   }
 }
