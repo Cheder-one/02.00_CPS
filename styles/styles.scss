@@ -342,9 +342,6 @@ button {
     }
   }
   .b-about-content {
-    &__e-text {
-      // width: 490px;
-    }
     &__e-logo-photo {
       width: 531.346px;
       height: 307px;
@@ -353,12 +350,5 @@ button {
   }
 }
 
-// TODO Скрыть icons b-header на других экранах
-
-// TODO Выстроить в ряд b-header и icons
-
-// TODO Скрыть b-top-menu для Laptop >=
-// TODO Изменить отступ для b-header
-// TODO Задать размеры logo-photo
-// TODO Добавить gap для b-about Laptop
-// TODO Проверить отступы b-about (left/right/bottom)
+// FIX Divider и <br> через псевдо
+// TODO Починить шрифты
