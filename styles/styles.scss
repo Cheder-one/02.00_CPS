@@ -182,11 +182,11 @@ button {
     width: 100%;
     height: auto;
     flex-shrink: 0;
-    border-radius: 2%;
+    border-radius: 6px;
   }
 }
 
-// Mobile
+/* ---- MOBILE ---- */
 @media screen and (max-width: 767.9px) {
   .b-top-menu {
     &__e-nav-icon:nth-child(n + 3):nth-child(-n + 6) {
@@ -233,31 +233,8 @@ button {
   }
 }
 
-// Tablet
+/* ---- TABLET ---- */
 @media screen and (min-width: 767.9px) and (max-width: 1023.9px) {
-  .b-header {
-    &__e-title {
-      margin-left: 24px;
-    }
-    &--box-model {
-      margin-bottom: 32px;
-    }
-  }
-
-  .b-slide-menu {
-    &--box-model {
-      margin-left: 24px;
-      margin-bottom: 32px;
-    }
-  }
-
-  .b-about {
-    &--box-model {
-      margin: 0 24px;
-      margin-bottom: 40px;
-    }
-  }
-
   // Три элемента прижаты влево, остальные вправо
   .b-top-menu {
     &__e-logo {
@@ -274,6 +251,21 @@ button {
     }
   }
 
+  .b-header {
+    &__e-title {
+      margin-left: 24px;
+    }
+    &--box-model {
+      margin-bottom: 32px;
+    }
+  }
+
+  .b-slide-menu {
+    &--box-model {
+      margin-left: 24px;
+      margin-bottom: 32px;
+    }
+  }
   .b-slide-row {
     &__address,
     &__review {
@@ -283,6 +275,11 @@ button {
 
   .b-about {
     gap: 48px;
+
+    &--box-model {
+      margin: 0 24px;
+      margin-bottom: 40px;
+    }
   }
   .b-about-content {
     &__e-part-3 {
@@ -296,7 +293,7 @@ button {
   }
 }
 
-// Laptop >=
+/* ---- DESKTOP ---- */
 @media screen and (min-width: 1023.9px) {
   .b-top-menu {
     display: none;
@@ -304,6 +301,7 @@ button {
 
   .b-header {
     &__e-title {
+      margin-left: 30px;
       margin-right: auto;
     }
     &__e-nav-icon {
@@ -325,9 +323,33 @@ button {
     }
   }
 
+  .b-slide-menu {
+    &--box-model {
+      margin-left: 32px;
+      margin-bottom: 20px;
+    }
+  }
   .b-slide-row {
     flex-flow: row wrap;
     overflow: visible;
+  }
+
+  .b-about {
+    gap: 36px;
+
+    &--box-model {
+      margin: 0 28px 48px 32px;
+    }
+  }
+  .b-about-content {
+    &__e-text {
+      // width: 490px;
+    }
+    &__e-logo-photo {
+      width: 531.346px;
+      height: 307px;
+      flex-shrink: 0;
+    }
   }
 }
 
