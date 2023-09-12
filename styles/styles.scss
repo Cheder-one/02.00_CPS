@@ -24,16 +24,15 @@ button {
 
 @font-face {
   font-family: "TT Lakes";
-  src: url("/src/app/assets/font/TTLakes/TTLakes-Regular.ttf")
-    format("truetype");
+  src: url("src/app/assets/font/TTLakes/TTLakes-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: "TT Lakes Medium";
-  src: url("/src/app/assets/font/TTLakes/TTLakes-Medium.ttf") format("truetype");
+  src: url("src/app/assets/font/TTLakes/TTLakes-Medium.ttf") format("truetype");
 }
 @font-face {
   font-family: "TT Lakes Bold";
-  src: url("/src/app/assets/font/TTLakes/TTLakes-Bold.ttf") format("truetype");
+  src: url("src/app/assets/font/TTLakes/TTLakes-Bold.ttf") format("truetype");
 }
 
 /* ---- Mixes ---- */
