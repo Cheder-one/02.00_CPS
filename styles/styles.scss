@@ -36,11 +36,7 @@ button {
   src: url("/src/app/assets/font/TTLakes/TTLakes-Bold.ttf") format("truetype");
 }
 
-/* Mixes */
-.common-mb {
-  margin-bottom: 24px;
-}
-
+/* ---- Mixes ---- */
 .slide {
   flex-shrink: 0;
   color: #7e7e82;
@@ -52,7 +48,7 @@ button {
   letter-spacing: -0.2px;
 }
 
-/* Header-top */
+/* ---- Top ---- */
 .b-top-menu {
   height: 88px;
   display: flex;
@@ -69,19 +65,19 @@ button {
     border-radius: 1px;
     background: #eaeaea;
   }
-
   &--box-model {
     padding: 0 16px;
     margin-bottom: 24px;
   }
 }
 
-/* Main */
+/* ---- Main ---- */
+/* Header */
 .b-header {
   display: flex;
-  gap: 12px;
 
   &__e-title {
+    margin-left: 12px;
     color: #1b1c21;
     font-family: TT Lakes Bold;
     font-size: 28px;
@@ -90,30 +86,41 @@ button {
     line-height: 142.857%;
     letter-spacing: -0.6px;
   }
+  &__e-nav-icon {
+    display: none;
+  }
+  &--box-model {
+    margin-bottom: 24px;
+  }
 }
 
+/* Slide-menu */
 .b-slide-menu {
-  position: relative; // TODO В модификатор
-
   &__e-fade {
     width: 24px;
     height: 40px;
-    position: absolute;
-    bottom: 0;
     left: auto;
     right: 0;
-
+    bottom: 0;
     flex-shrink: 0;
+    position: absolute;
     background: linear-gradient(
       270deg,
       #f8f8f8 16.84%,
       rgba(248, 248, 248, 0) 100%
     );
+    &--hidden {
+      display: none;
+    }
+  }
+  &--box-model {
+    position: relative;
+    margin-left: 16px;
+    margin-bottom: 24px;
   }
 }
 
 .b-slide-row {
-  margin-left: 16px;
   display: flex;
   gap: 20px;
   overflow-x: scroll;
@@ -128,12 +135,11 @@ button {
   }
 }
 
+/* ---- About ---- */
 .b-about {
   display: flex;
-  &--box-model {
-    margin: 0 16px;
-  }
 }
+
 .b-about-content {
   &__e-text {
     margin-bottom: 16px;
@@ -145,7 +151,6 @@ button {
     line-height: 128.571%;
     letter-spacing: 0.2px;
   }
-
   &__e-more {
     margin-bottom: 16px;
     display: flex;
@@ -158,33 +163,32 @@ button {
     line-height: 150%;
     letter-spacing: -0.2px;
   }
-
-  // &--box-model {
-  //   margin: 0 16px;
-  // }
-}
-.b-logo {
-  &__e-photo-mob {
+  &__e-logo-photo {
     width: 100%;
     height: auto;
     flex-shrink: 0;
+    border-radius: 2%;
   }
 }
 
 // Mobile
 @media screen and (max-width: 767.9px) {
   .b-top-menu {
-    // Скрыты иконки 3-6
     &__e-nav-icon:nth-child(n + 3):nth-child(-n + 6) {
       display: none;
     }
-    // Скрыт 1й divider
     &__e-divider:nth-child(2) {
       display: none;
     }
   }
 
-  // Скрытие слайдов после 2-го
+  .b-slide-menu {
+    &__e-fade {
+      &--hidden {
+        display: block;
+      }
+    }
+  }
   .b-slide-row > .slide:nth-child(n + 3) {
     display: none;
   }
@@ -192,17 +196,23 @@ button {
   .b-about {
     flex-direction: column;
     &--box-model {
+      margin: 0 16px;
       margin-bottom: 35px;
     }
   }
-  // Скрытие лишнего текста о компании
   .b-about-content {
     &__e-part-2 {
       display: none;
     }
+    &__e-logo-photo {
+      margin: 0 -16px;
+      width: auto;
+      height: auto;
+      flex-shrink: 0;
+      border-radius: 0;
+    }
   }
 
-  // Отключение разрыва текста
   .b-divider-x--show {
     display: none;
   }
@@ -210,11 +220,25 @@ button {
 
 // Tablet
 @media screen and (min-width: 767.9px) and (max-width: 1023.9px) {
-  .common-mb {
-    margin-bottom: 32px;
+  .b-header {
+    &__e-title {
+      margin-left: 24px;
+    }
+    &--box-model {
+      margin-bottom: 32px;
+    }
   }
+
+  .b-slide-menu {
+    &--box-model {
+      margin-left: 24px;
+      margin-bottom: 32px;
+    }
+  }
+
   .b-about {
     &--box-model {
+      margin: 0 24px;
       margin-bottom: 40px;
     }
   }
@@ -235,7 +259,6 @@ button {
     }
   }
 
-  // Скрытие 4-го слайда
   .b-slide-row {
     &__address,
     &__review {
@@ -243,34 +266,51 @@ button {
     }
   }
 
-  // Скрытие лишнего текста о компании
+  .b-about {
+    gap: 48px;
+  }
   .b-about-content {
     &__e-part-3 {
       display: none;
+    }
+    &__e-logo-photo {
+      width: 360px;
+      height: 260px;
+      flex-shrink: 0;
     }
   }
 }
 
 // Laptop >=
 @media screen and (min-width: 1023.9px) {
+  .b-top-menu {
+    display: none;
+  }
+
+  .b-header {
+    &__e-title {
+      margin-right: auto;
+    }
+    &__e-nav-icon {
+      display: block;
+    }
+    &--box-model {
+      margin: 42px 16px 8px 0;
+    }
+  }
+
   .b-slide-row {
     flex-flow: row wrap;
     overflow: visible;
   }
-  .b-slide-menu {
-    &__e-fade {
-      display: none;
-    }
-  }
 }
 
-// TODO Заменить общий common-mb на индивидуальные модификаторы
-// TODO Починить отступы b-about (left/right/bottom)
-// TODO Добавить gap для b-about
-// TODO Скруглить края logo-photo
+// TODO Скрыть icons b-header на других экранах
+
+// TODO Выстроить в ряд b-header и icons
 
 // TODO Скрыть b-top-menu для Laptop >=
 // TODO Изменить отступ для b-header
-// TODO Выстроить в ряд b-header и icons
-
-// TODO Скрыть icons b-header на других экранах
+// TODO Задать размеры logo-photo
+// TODO Добавить gap для b-about Laptop
+// TODO Проверить отступы b-about (left/right/bottom)

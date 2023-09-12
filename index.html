@@ -49,22 +49,21 @@
     </header>
 
     <main>
-      <div class="b-header common-mb">
+      <div class="b-header b-header--box-model">
         <img src="src/app/assets/img/highlight.svg" alt="" />
         <h1 class="b-header__e-title">Услуги и сервисы</h1>
 
-        <button class="b-top-menu__e-nav-icon">
+        <button class="b-header__e-nav-icon">
           Оставить заявку
           <img src="src/app/assets/img/ic/repair.svg" alt="repair" />
         </button>
-
-        <button class="b-top-menu__e-nav-icon">
+        <button class="b-header__e-nav-icon">
           Статус ремонта
           <img src="src/app/assets/img/ic/checkstatus.svg" alt="check status" />
         </button>
       </div>
 
-      <div class="b-slide-menu b-slide-menu--box-model common-mb">
+      <div class="b-slide-menu b-slide-menu--box-model">
         <div class="b-slide-row">
           <!-- prettier-ignore -->
           <button class="b-slide-row__devices b-slide-row__devices--active slide">
@@ -79,10 +78,10 @@
           <button class="b-slide-row__review slide">Отзывы</button>
         </div>
 
-        <div class="b-slide-menu__e-fade"></div>
+        <div class="b-slide-menu__e-fade b-slide-menu__e-fade--hidden"></div>
       </div>
 
-      <div class="b-about b-about--box-model common-mb">
+      <div class="b-about b-about--box-model">
         <section class="b-about-content b-about-content">
           <div class="b-about-content__e-text">
             <p class="b-about-content__e-part-1">
@@ -109,13 +108,11 @@
           </div>
         </section>
 
-        <div class="b-logo">
-          <img
-            class="b-logo__e-photo-mob"
-            src="src/app/assets/img/logo/cps-logo-photo.png"
-            alt="company logo photo"
-          />
-        </div>
+        <img
+          class="b-about-content__e-logo-photo"
+          src="src/app/assets/img/logo/cps-logo-photo.png"
+          alt="company logo photo"
+        />
       </div>
     </main>
 
