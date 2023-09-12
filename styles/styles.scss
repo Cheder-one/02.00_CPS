@@ -88,6 +88,21 @@ button {
   }
   &__e-nav-icon {
     display: none;
+    margin-right: 32px;
+  }
+  &__e-nav-icon:last-child {
+    margin-right: 0;
+  }
+  &__e-nav-icon > span {
+    padding-right: 8px;
+    color: #1b1c21;
+    text-align: right;
+    font-family: TT Lakes;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: -0.2px;
   }
   &--box-model {
     margin-bottom: 24px;
@@ -292,7 +307,18 @@ button {
       margin-right: auto;
     }
     &__e-nav-icon {
-      display: block;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      color: #1b1c21;
+      text-align: right;
+      font-family: TT Lakes;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 24px; /* 150% */
+      letter-spacing: -0.2px;
     }
     &--box-model {
       margin: 42px 16px 8px 0;
