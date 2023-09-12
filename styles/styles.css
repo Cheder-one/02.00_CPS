@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 *,
 *:before,
 *:after {
@@ -24,15 +29,15 @@ button {
 
 @font-face {
   font-family: "TT Lakes";
-  src: url("../src/app/assets/font/TTLakes/TTLakes-Regular.woff") format("woff");
+  src: url("../src/app/assets/font/TTLakes-Regular.woff") format("woff");
 }
 @font-face {
   font-family: "TT Lakes Medium";
-  src: url("../src/app/assets/font/TTLakes/TTLakes-Medium.woff") format("woff");
+  src: url("../src/app/assets/font/TTLakes-Medium.woff") format("woff");
 }
 @font-face {
   font-family: "TT Lakes Bold";
-  src: url("../src/app/assets/font/TTLakes/TTLakes-Bold.woff") format("woff");
+  src: url("../src/app/assets/font/TTLakes-Bold.woff") format("woff");
 }
 /* ---- Mixes ---- */
 .slide {
