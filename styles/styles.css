@@ -29,7 +29,7 @@ button {
 
 @font-face {
   font-family: "TT Lakes";
-  src: url("./src/app/assets/font/TTLakes/TTLakes-Regular.ttf")
+  src: url("/home/username/Документы/02.01_Макет_html_css/src/app/assets/font/TTLakes/TTLakes-Regular.ttf")
     format("truetype");
 }
 @font-face {
