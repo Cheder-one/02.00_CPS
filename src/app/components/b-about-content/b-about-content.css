@@ -33,11 +33,11 @@
     display: none;
   }
   .b-about-content__e-logo-photo {
-    margin: 0 -16px;
-    width: auto;
-    height: auto;
     flex-shrink: 0;
     border-radius: 0;
+  }
+  .b-about-content--box-model {
+    margin: 0 16px;
   }
 }
 /* ---- TABLET ---- */

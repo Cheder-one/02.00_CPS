@@ -23,6 +23,19 @@
 /* ---- MOBILE ---- */
 @media screen and (max-width: 767.9px) {
   .b-top-menu {
+    &__e-divider:nth-child(7) {
+      margin-right: auto;
+    }
+    // Отступы между каждым элементом
+    &__e-nav-icon,
+    &__e-logo {
+      margin-right: 16px;
+    }
+    // Удаление отступа после последнего
+    &__e-nav-icon:last-child {
+      margin-right: 0;
+    }
+
     &__e-nav-icon:nth-child(n + 3):nth-child(-n + 6) {
       display: none;
     }

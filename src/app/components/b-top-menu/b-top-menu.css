@@ -21,6 +21,15 @@
 
 /* ---- MOBILE ---- */
 @media screen and (max-width: 767.9px) {
+  .b-top-menu__e-divider:nth-child(7) {
+    margin-right: auto;
+  }
+  .b-top-menu__e-nav-icon, .b-top-menu__e-logo {
+    margin-right: 16px;
+  }
+  .b-top-menu__e-nav-icon:last-child {
+    margin-right: 0;
+  }
   .b-top-menu__e-nav-icon:nth-child(n+3):nth-child(-n+6) {
     display: none;
   }

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/styles.css" />
 
-    <link rel="stylesheet" href="./src/app/components/mixes/slide.css" />
+    <link rel="stylesheet" href="./src/app/components/mixes/nav-slide.css" />
     <link
       rel="stylesheet"
       href="./src/app/components/b-top-menu/b-top-menu.css"
@@ -17,7 +17,7 @@
     />
     <link
       rel="stylesheet"
-      href="./src/app/components/b-slide-row /b-slide-row .css"
+      href="./src/app/components/b-slide-row/b-slide-row.css"
     />
     <link rel="stylesheet" href="./src/app/components/b-about/b-about.css" />
     <link
@@ -81,23 +81,25 @@
       <div class="b-slide-menu b-slide-menu--box-model">
         <div class="b-slide-row">
           <!-- prettier-ignore -->
-          <button class="b-slide-row__devices b-slide-row__devices--active slide">
+          <a href="#" class="b-slide-row__devices b-slide-row__devices--active nav-slide">
             Ремонтируемые устройства
-          </button>
+          </a>
           <!-- prettier-ignore -->
-          <button class="b-slide-row__additional slide">Дополнительные услуги</button>
-          <button class="b-slide-row__price slide">Цены на услуги</button>
+          <a href="#" class="b-slide-row__additional nav-slide">Дополнительные услуги</a>
+          <a href="#" class="b-slide-row__price nav-slide">Цены на услуги</a>
           <!-- prettier-ignore -->
-          <button class="b-slide-row__address slide">Адреса сервисных центров</button>
-          <button class="b-slide-row__special slide">Специальные цены</button>
-          <button class="b-slide-row__review slide">Отзывы</button>
+          <a href="#" class="b-slide-row__address nav-slide">Адреса сервисных центров</a>
+          <a href="#" class="b-slide-row__special nav-slide">
+            Специальные цены
+          </a>
+          <a href="#" class="b-slide-row__review nav-slide">Отзывы</a>
         </div>
 
         <div class="b-slide-menu__e-fade"></div>
       </div>
 
       <div class="b-about b-about--box-model">
-        <section class="b-about-content b-about-content">
+        <section class="b-about-content b-about-content--box-model">
           <div class="b-about-content__e-text">
             <p class="b-about-content__e-part-1">
               Мы являемся авторизованным сервисным центром по ремонту техники

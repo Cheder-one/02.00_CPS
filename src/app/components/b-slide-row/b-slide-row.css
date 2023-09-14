@@ -1,5 +1,6 @@
 .b-slide-row {
   display: flex;
+  align-items: center;
   gap: 20px;
   overflow-x: scroll;
 }
@@ -11,21 +12,11 @@
 }
 
 /* ---- MOBILE ---- */
-@media screen and (max-width: 767.9px) {
-  .b-slide-row > .slide:nth-child(n+3) {
-    display: none;
-  }
-}
 /* ---- TABLET ---- */
-@media screen and (min-width: 767.9px) and (max-width: 1023.9px) {
-  .b-slide-row__address, .b-slide-row__review {
-    display: none;
-  }
-}
 /* ---- DESKTOP ---- */
 @media screen and (min-width: 1023.9px) {
   .b-slide-row {
     flex-flow: row wrap;
     overflow: visible;
   }
-}/*# sourceMappingURL=b-slide-row .css.map */
+}/*# sourceMappingURL=b-slide-row.css.map */

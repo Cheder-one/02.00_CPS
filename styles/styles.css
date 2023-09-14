@@ -18,7 +18,8 @@ body {
   font-family: TT Lakes;
 }
 
-button {
+button,
+a {
   all: initial;
   cursor: pointer;
 }

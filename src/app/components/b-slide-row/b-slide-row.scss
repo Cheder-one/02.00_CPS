@@ -1,5 +1,6 @@
 .b-slide-row {
   display: flex;
+  align-items: center;
   gap: 20px;
   overflow-x: scroll;
 
@@ -15,19 +16,19 @@
 
 /* ---- MOBILE ---- */
 @media screen and (max-width: 767.9px) {
-  .b-slide-row > .slide:nth-child(n + 3) {
-    display: none;
-  }
+  // .b-slide-row > .nav-slide:nth-child(n + 3) {
+  //   display: none;
+  // }
 }
 
 /* ---- TABLET ---- */
 @media screen and (min-width: 767.9px) and (max-width: 1023.9px) {
-  .b-slide-row {
-    &__address,
-    &__review {
-      display: none;
-    }
-  }
+  // .b-slide-row {
+  //   &__address,
+  //   &__review {
+  //     display: none;
+  //   }
+  // }
 }
 
 /* ---- DESKTOP ---- */

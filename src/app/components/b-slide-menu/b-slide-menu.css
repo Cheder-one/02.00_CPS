@@ -1,5 +1,4 @@
 .b-slide-menu__e-fade {
-  display: none;
   width: 24px;
   height: 40px;
   left: auto;
@@ -16,11 +15,6 @@
 }
 
 /* ---- MOBILE ---- */
-@media screen and (max-width: 767.9px) {
-  .b-slide-menu__e-fade {
-    display: block;
-  }
-}
 /* ---- TABLET ---- */
 @media screen and (min-width: 767.9px) and (max-width: 1023.9px) {
   .b-slide-menu--box-model {
@@ -30,6 +24,9 @@
 }
 /* ---- DESKTOP ---- */
 @media screen and (min-width: 1023.9px) {
+  .b-slide-menu__e-fade {
+    display: none;
+  }
   .b-slide-menu--box-model {
     margin-left: 32px;
     margin-bottom: 20px;
