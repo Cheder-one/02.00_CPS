@@ -1,5 +1,12 @@
 .b-about {
   display: flex;
+
+  &__e-logo-photo {
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+    border-radius: 6px;
+  }
 }
 
 /* ---- MOBILE ---- */
@@ -9,6 +16,10 @@
 
     &__e-text-break {
       display: none;
+    }
+    &__e-logo-photo {
+      flex-shrink: 0;
+      border-radius: 0;
     }
 
     &--box-model {
@@ -22,6 +33,12 @@
   .b-about {
     gap: 48px;
 
+    &__e-logo-photo {
+      width: 360px;
+      height: 260px;
+      flex-shrink: 0;
+    }
+
     &--box-model {
       margin: 0 24px;
       margin-bottom: 40px;
@@ -33,6 +50,12 @@
 @media screen and (min-width: 1023.9px) {
   .b-about {
     gap: 36px;
+
+    &__e-logo-photo {
+      width: 531.346px;
+      height: 307px;
+      flex-shrink: 0;
+    }
 
     &--box-model {
       margin: 0 28px 48px 32px;

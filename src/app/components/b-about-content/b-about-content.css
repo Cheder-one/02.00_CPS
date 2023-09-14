@@ -20,21 +20,11 @@
   line-height: 150%;
   letter-spacing: -0.2px;
 }
-.b-about-content__e-logo-photo {
-  width: 100%;
-  height: auto;
-  flex-shrink: 0;
-  border-radius: 6px;
-}
 
 /* ---- MOBILE ---- */
 @media screen and (max-width: 767.9px) {
   .b-about-content__e-part-2 {
     display: none;
-  }
-  .b-about-content__e-logo-photo {
-    flex-shrink: 0;
-    border-radius: 0;
   }
   .b-about-content--box-model {
     margin: 0 16px;
@@ -45,17 +35,5 @@
   .b-about-content__e-part-3 {
     display: none;
   }
-  .b-about-content__e-logo-photo {
-    width: 360px;
-    height: 260px;
-    flex-shrink: 0;
-  }
 }
-/* ---- DESKTOP ---- */
-@media screen and (min-width: 1023.9px) {
-  .b-about-content__e-logo-photo {
-    width: 531.346px;
-    height: 307px;
-    flex-shrink: 0;
-  }
-}/*# sourceMappingURL=b-about-content.css.map */
+/* ---- DESKTOP ---- *//*# sourceMappingURL=b-about-content.css.map */
