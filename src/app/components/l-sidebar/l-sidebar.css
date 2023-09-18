@@ -1,0 +1,10 @@
+.l-sidebar {
+  flex-shrink: 0;
+  background: #fff;
+  box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2), -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+}
+.l-sidebar--box-model {
+  top: 0;
+  width: 320px;
+  height: 1024px;
+}/*# sourceMappingURL=l-sidebar.css.map */

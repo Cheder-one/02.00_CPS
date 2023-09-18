@@ -1,10 +1,19 @@
 .b-slide-row {
   display: flex;
-  align-items: center;
   gap: 20px;
-  overflow-x: scroll;
+  align-items: center;
+  overflow-x: auto;
 
-  &__devices {
+  &__e-item {
+    flex-shrink: 0;
+    color: #7e7e82;
+    font-family: TT Lakes;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: -0.2px;
+
     &--active {
       padding: 8px;
       border: 2px solid #b8ffec;
@@ -16,19 +25,12 @@
 
 /* ---- MOBILE ---- */
 @media screen and (max-width: 767.9px) {
-  // .b-slide-row > .nav-slide:nth-child(n + 3) {
-  //   display: none;
-  // }
+  //
 }
 
 /* ---- TABLET ---- */
 @media screen and (min-width: 767.9px) and (max-width: 1023.9px) {
-  // .b-slide-row {
-  //   &__address,
-  //   &__review {
-  //     display: none;
-  //   }
-  // }
+  //
 }
 
 /* ---- DESKTOP ---- */

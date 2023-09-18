@@ -1,0 +1,36 @@
+.b-contacts {
+  &__e-icons {
+    margin-bottom: 16px;
+  }
+  &__e-icon {
+    margin-right: 16px;
+  }
+
+  &__e-address {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  &__e-mail {
+    color: #1b1c21;
+    font-family: TT Lakes Medium;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: -0.2px;
+  }
+  &__e-phone {
+    color: #1b1c21;
+    font-family: TT Lakes Bold;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 133.333%;
+    letter-spacing: -0.6px;
+  }
+
+  &--box-model {
+    margin: 0 0 40px 24px;
+  }
+}

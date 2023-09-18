@@ -1,0 +1,32 @@
+.b-sidebar-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.b-sidebar-body__e-lang-list {
+  margin-left: 24px;
+  display: flex;
+  gap: 8px;
+  cursor: pointer;
+}
+.b-sidebar-body__e-lang-list > * {
+  color: #1b1c21;
+  font-family: TT Lakes Medium;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -0.2px;
+}
+.b-sidebar-body__e-lang--active {
+  color: #7e7e82;
+  font-family: TT Lakes;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -0.2px;
+}
+.b-sidebar-body--box-model {
+  margin-bottom: 32px;
+}/*# sourceMappingURL=b-sidebar-body.css.map */

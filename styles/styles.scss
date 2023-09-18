@@ -1,11 +1,11 @@
-* {
-  margin: 0;
-  padding: 0;
-}
 *,
 *:before,
 *:after {
   box-sizing: inherit;
+}
+* {
+  margin: 0;
+  padding: 0;
 }
 html {
   box-sizing: border-box;
@@ -14,13 +14,19 @@ body {
   background: #f8f8f8;
   font-family: TT Lakes;
 }
+
 button,
 a {
   all: initial;
   cursor: pointer;
 }
+ul,
+ol {
+  list-style: none;
+}
+
 ::-webkit-scrollbar {
-  height: 0px;
+  height: 3px;
 }
 
 @font-face {

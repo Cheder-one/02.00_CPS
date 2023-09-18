@@ -1,0 +1,15 @@
+.b-sidebar-top {
+  display: flex;
+  align-items: center;
+
+  &__e-logo {
+    margin-right: auto;
+  }
+  &__e-icon:nth-child(1) {
+    margin-right: 16px;
+  }
+
+  &--box-model {
+    margin: 18px 24px 46px;
+  }
+}

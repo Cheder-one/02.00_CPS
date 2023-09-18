@@ -1,6 +1,7 @@
 .b-about-content {
   &__e-text {
     margin-bottom: 16px;
+
     color: #1b1c21;
     font-family: TT Lakes;
     font-size: 14px;
@@ -9,10 +10,10 @@
     line-height: 128.571%;
     letter-spacing: 0.2px;
   }
-  &__e-more {
+  &__e-more-container {
     margin-bottom: 16px;
     display: flex;
-    align-items: center;
+
     color: #1b1c21;
     font-family: TT Lakes Medium;
     font-size: 16px;
@@ -21,12 +22,11 @@
     line-height: 150%;
     letter-spacing: -0.2px;
   }
-  // &__e-logo-photo {
-  //   width: 100%;
-  //   height: auto;
-  //   flex-shrink: 0;
-  //   border-radius: 6px;
-  // }
+  &__e-read-more {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
 }
 
 /* ---- MOBILE ---- */
@@ -35,10 +35,6 @@
     &__e-part-2 {
       display: none;
     }
-    // &__e-logo-photo {
-    //   flex-shrink: 0;
-    //   border-radius: 0;
-    // }
 
     &--box-model {
       margin: 0 16px;
@@ -52,21 +48,10 @@
     &__e-part-3 {
       display: none;
     }
-    // &__e-logo-photo {
-    //   width: 360px;
-    //   height: 260px;
-    //   flex-shrink: 0;
-    // }
   }
 }
 
 /* ---- DESKTOP ---- */
 @media screen and (min-width: 1023.9px) {
-  // .b-about-content {
-  //   &__e-logo-photo {
-  //     width: 531.346px;
-  //     height: 307px;
-  //     flex-shrink: 0;
-  //   }
-  // }
+  //
 }

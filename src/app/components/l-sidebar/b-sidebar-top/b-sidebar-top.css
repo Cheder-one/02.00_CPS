@@ -1,0 +1,13 @@
+.b-sidebar-top {
+  display: flex;
+  align-items: center;
+}
+.b-sidebar-top__e-logo {
+  margin-right: auto;
+}
+.b-sidebar-top__e-icon:nth-child(1) {
+  margin-right: 16px;
+}
+.b-sidebar-top--box-model {
+  margin: 18px 24px 46px;
+}/*# sourceMappingURL=b-sidebar-top.css.map */

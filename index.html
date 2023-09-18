@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/styles.css" />
 
-    <link rel="stylesheet" href="./src/app/components/mixes/nav-slide.css" />
     <link
       rel="stylesheet"
       href="./src/app/components/b-top-menu/b-top-menu.css"
@@ -25,38 +24,54 @@
       href="./src/app/components/b-about-content/b-about-content.css"
     />
 
+    <!-- Sidebar -->
+    <link
+      rel="stylesheet"
+      href="./src/app/components/l-sidebar/l-sidebar.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./src/app/components/l-sidebar/b-sidebar-top/b-sidebar-top.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./src/app/components/l-sidebar/b-sidebar-body/b-sidebar-body.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./src/app/components/l-sidebar/b-sidebar-body/b-menu-list/b-menu-list.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./src/app/components/l-sidebar/b-sidebar-body/b-contacts/b-contacts.css"
+    />
+
     <title>CSP Макет</title>
   </head>
   <body>
     <header>
       <div class="b-top-menu b-top-menu--box-model">
+        <!-- Top Menu -->
         <button class="b-top-menu__e-nav-icon">
           <img src="src/app/assets/img/ic/burger.svg" alt="sidebar" />
         </button>
-
         <div class="b-top-menu__e-divider"></div>
-
         <a href="#" class="b-top-menu__e-logo">
           <img src="src/app/assets/img/logo/cps-logo.svg" alt="logo" />
         </a>
         <button class="b-top-menu__e-nav-icon">
           <img src="src/app/assets/img/ic/call.svg" alt="call" />
         </button>
-
         <button class="b-top-menu__e-nav-icon">
           <img src="src/app/assets/img/ic/chat.svg" alt="chat" />
         </button>
-
         <button class="b-top-menu__e-nav-icon">
           <img src="src/app/assets/img/ic/profile.svg" alt="profile" />
         </button>
-
         <div class="b-top-menu__e-divider"></div>
-
         <button class="b-top-menu__e-nav-icon">
           <img src="src/app/assets/img/ic/repair.svg" alt="repair" />
         </button>
-
         <button class="b-top-menu__e-nav-icon">
           <img src="src/app/assets/img/ic/checkstatus.svg" alt="check status" />
         </button>
@@ -64,6 +79,7 @@
     </header>
 
     <main>
+      <!-- Header -->
       <div class="b-header b-header--box-model">
         <img src="src/app/assets/img/highlight.svg" alt="" />
         <h1 class="b-header__e-title">Услуги и сервисы</h1>
@@ -78,26 +94,22 @@
         </button>
       </div>
 
+      <!-- Slide Menu -->
       <div class="b-slide-menu b-slide-menu--box-model">
         <div class="b-slide-row">
-          <!-- prettier-ignore -->
-          <a href="#" class="b-slide-row__devices b-slide-row__devices--active nav-slide">
+          <a href="#" class="b-slide-row__e-item b-slide-row__e-item--active">
             Ремонтируемые устройства
           </a>
-          <!-- prettier-ignore -->
-          <a href="#" class="b-slide-row__additional nav-slide">Дополнительные услуги</a>
-          <a href="#" class="b-slide-row__price nav-slide">Цены на услуги</a>
-          <!-- prettier-ignore -->
-          <a href="#" class="b-slide-row__address nav-slide">Адреса сервисных центров</a>
-          <a href="#" class="b-slide-row__special nav-slide">
-            Специальные цены
-          </a>
-          <a href="#" class="b-slide-row__review nav-slide">Отзывы</a>
+          <a href="#" class="b-slide-row__e-item">Дополнительные услуги</a>
+          <a href="#" class="b-slide-row__e-item">Цены на услуги</a>
+          <a href="#" class="b-slide-row__e-item">Адреса сервисных центров</a>
+          <a href="#" class="b-slide-row__e-item"> Специальные цены </a>
+          <a href="#" class="b-slide-row__e-item">Отзывы</a>
         </div>
-
         <div class="b-slide-menu__e-fade"></div>
       </div>
 
+      <!-- About -->
       <div class="b-about b-about--box-model">
         <section class="b-about-content b-about-content--box-model">
           <div class="b-about-content__e-text">
@@ -106,9 +118,7 @@
               Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
               официальной гарантией производителя.
             </p>
-
             <br class="b-about__e-text-break" />
-
             <p class="b-about-content__e-part-2">
               Мы успешно работаем с 1992 года и заслужили репутацию надежного
               партнера
@@ -119,9 +129,12 @@
               </span>
             </p>
           </div>
-          <div class="b-about-content__e-more">
-            <img src="src/app/assets/img/expand.svg" alt="" />
-            <span>Читать далее</span>
+
+          <div class="b-about-content__e-more-container">
+            <div class="b-about-content__e-read-more">
+              <img src="src/app/assets/img/expand.svg" alt="" />
+              <span>Читать далее</span>
+            </div>
           </div>
         </section>
 
@@ -131,6 +144,74 @@
           alt="company logo photo"
         />
       </div>
+
+      <!-- SIDEBAR -->
+      <aside class="l-sidebar l-sidebar--box-model">
+        <!-- Top -->
+        <div class="b-sidebar-top b-sidebar-top--box-model">
+          <button class="b-sidebar-top__e-icon">
+            <img src="src/app/assets/img/ic/close-burger.svg" alt="call" />
+          </button>
+          <a href="#" class="b-sidebar-top__e-logo">
+            <img src="src/app/assets/img/logo/cps-logo.svg" alt="logo" />
+          </a>
+          <button class="b-sidebar-top__e-icon">
+            <img src="src/app/assets/img/ic/search.svg" alt="call" />
+          </button>
+        </div>
+
+        <!-- Body -->
+        <div class="b-sidebar-body b-sidebar-body--box-model">
+          <!-- Menu List -->
+          <div class="b-menu-list b-menu-list--box-model">
+            <a class="b-menu-list__e-item b-menu-list__e-item--active">
+              Ремонт техники
+            </a>
+            <a class="b-menu-list__e-item">Услуги и сервисы</a>
+            <a class="b-menu-list__e-item">Корпоративным клиент</a>
+            <a class="b-menu-list__e-item">Продавцам техники</a>
+            <a class="b-menu-list__e-item">Партнерам</a>
+            <a class="b-menu-list__e-item">Производителям</a>
+            <a class="b-menu-list__e-item">Наши сервисные центры</a>
+            <a class="b-menu-list__e-item">Контакты</a>
+          </div>
+
+          <!-- Contacts -->
+          <div class="b-contacts b-contacts--box-model">
+            <div class="b-contacts__e-icons">
+              <button class="b-contacts__e-icon">
+                <img src="src/app/assets/img/ic/call.svg" alt="call" />
+              </button>
+              <button class="b-contacts__e-icon">
+                <img src="src/app/assets/img/ic/chat.svg" alt="chat" />
+              </button>
+              <button class="b-contacts__e-icon">
+                <img src="src/app/assets/img/ic/profile.svg" alt="profile" />
+              </button>
+            </div>
+
+            <address class="b-contacts__e-address">
+              <a class="b-contacts__e-mail" href="mailto:mail@cps.com"
+                >mail@cps.com</a
+              >
+              <a class="b-contacts__e-phone" href="tel:88008908900"
+                >8 800 890 8900</a
+              >
+            </address>
+          </div>
+
+          <!-- lang -->
+          <div class="b-sidebar-body__e-lang-list">
+            <button
+              class="b-sidebar-body__e-lang b-sidebar-body__e-lang--active"
+            >
+              RU
+            </button>
+            <button class="b-sidebar-body__e-lang">EN</button>
+            <button class="b-sidebar-body__e-lang">CH</button>
+          </div>
+        </div>
+      </aside>
     </main>
 
     <footer></footer>

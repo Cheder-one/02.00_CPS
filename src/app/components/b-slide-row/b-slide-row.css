@@ -1,10 +1,20 @@
 .b-slide-row {
   display: flex;
-  align-items: center;
   gap: 20px;
-  overflow-x: scroll;
+  align-items: center;
+  overflow-x: auto;
 }
-.b-slide-row__devices--active {
+.b-slide-row__e-item {
+  flex-shrink: 0;
+  color: #7e7e82;
+  font-family: TT Lakes;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -0.2px;
+}
+.b-slide-row__e-item--active {
   padding: 8px;
   border: 2px solid #b8ffec;
   border-radius: 6px;
