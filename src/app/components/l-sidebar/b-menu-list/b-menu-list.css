@@ -52,8 +52,9 @@
   }
 }
 /* ---- TABLET ---- */
+/* ---- LAPTOP ---- */
 /* ---- DESKTOP ---- */
-@media screen and (min-width: 1023.9px) {
+@media screen and (min-width: 1439.9px) {
   .b-menu-list {
     gap: 28px;
   }

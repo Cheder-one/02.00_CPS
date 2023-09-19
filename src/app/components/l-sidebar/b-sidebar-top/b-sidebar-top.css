@@ -24,8 +24,9 @@
     margin-bottom: 50px;
   }
 }
+/* ---- LAPTOP ---- */
 /* ---- DESKTOP ---- */
-@media screen and (min-width: 1023.9px) {
+@media screen and (min-width: 1439.9px) {
   .b-sidebar-top__e-icon:nth-child(1) {
     display: none;
   }
