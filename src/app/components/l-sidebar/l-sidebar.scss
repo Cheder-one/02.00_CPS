@@ -43,7 +43,6 @@
     left: 0;
     width: 320px;
     height: 100vh;
-    max-height: 1024px;
   }
 }
 
@@ -71,7 +70,7 @@
   .l-sidebar {
     box-shadow: none;
     &--box-model {
-      position: relative;
+      position: static;
       width: 320px;
       height: 1024px;
       order: -1;

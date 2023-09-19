@@ -52,4 +52,12 @@
   }
 }
 /* ---- TABLET ---- */
-/* ---- DESKTOP ---- *//*# sourceMappingURL=b-menu-list.css.map */
+/* ---- DESKTOP ---- */
+@media screen and (min-width: 1023.9px) {
+  .b-menu-list {
+    gap: 28px;
+  }
+  .b-menu-list--box-model {
+    margin: 0 0 32px 24px;
+  }
+}/*# sourceMappingURL=b-menu-list.css.map */

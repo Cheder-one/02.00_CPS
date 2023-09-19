@@ -67,5 +67,11 @@
 
 /* ---- DESKTOP ---- */
 @media screen and (min-width: 1023.9px) {
-  //
+  .b-menu-list {
+    gap: 28px;
+
+    &--box-model {
+      margin: 0 0 32px 24px;
+    }
+  }
 }

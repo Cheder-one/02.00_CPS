@@ -24,4 +24,12 @@
     margin-bottom: 50px;
   }
 }
-/* ---- DESKTOP ---- *//*# sourceMappingURL=b-sidebar-top.css.map */
+/* ---- DESKTOP ---- */
+@media screen and (min-width: 1023.9px) {
+  .b-sidebar-top__e-icon:nth-child(1) {
+    display: none;
+  }
+  .b-sidebar-top--box-model {
+    margin: 30px 30px 38px 22px;
+  }
+}/*# sourceMappingURL=b-sidebar-top.css.map */

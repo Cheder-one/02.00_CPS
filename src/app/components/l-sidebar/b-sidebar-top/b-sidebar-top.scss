@@ -34,5 +34,13 @@
 
 /* ---- DESKTOP ---- */
 @media screen and (min-width: 1023.9px) {
-  //
+  .b-sidebar-top {
+    &__e-icon:nth-child(1) {
+      display: none;
+    }
+
+    &--box-model {
+      margin: 30px 30px 38px 22px;
+    }
+  }
 }
