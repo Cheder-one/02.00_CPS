@@ -52,6 +52,11 @@
     &__e-lang-list {
       margin-left: 16px;
     }
+
+    &--box-model {
+      width: 100vw;
+      max-width: 360px;
+    }
   }
 }
 
@@ -70,7 +75,7 @@
   .l-sidebar {
     box-shadow: none;
     &--box-model {
-      position: static;
+      position: relative;
       width: 320px;
       height: 1024px;
     }

@@ -44,6 +44,10 @@
   .l-sidebar__e-lang-list {
     margin-left: 16px;
   }
+  .l-sidebar--box-model {
+    width: 100vw;
+    max-width: 360px;
+  }
 }
 /* ---- TABLET ---- */
 /* ---- LAPTOP ---- */
@@ -53,7 +57,7 @@
     box-shadow: none;
   }
   .l-sidebar--box-model {
-    position: static;
+    position: relative;
     width: 320px;
     height: 1024px;
   }
