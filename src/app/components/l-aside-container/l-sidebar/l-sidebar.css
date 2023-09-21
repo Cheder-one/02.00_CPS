@@ -1,3 +1,6 @@
+@import url(./b-sidebar-top/b-sidebar-top.css);
+@import url(./b-menu-list/b-menu-list.css);
+@import url(./b-contacts/b-contacts.css);
 .l-sidebar {
   display: flex;
   flex-direction: column;
