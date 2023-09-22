@@ -61,4 +61,8 @@ ol {
     background: #fff;
     order: -1;
   }
+}
+/* !----- DEVELOP_MODE -----! */
+.l-aside-container {
+  display: none;
 }/*# sourceMappingURL=main.css.map */
